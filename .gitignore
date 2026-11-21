@@ -1,0 +1,10 @@
+# Local medical reports and extracted health data
+*.pdf
+*-review.json
+report-*-extracted.json
+__pycache__/
+node_modules/
+.next/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,23 @@
+{
+  "name": "kin-bloodwork",
+  "private": true,
+  "scripts": {
+    "start": "sh scripts/start.sh",
+    "legacy:start": "python3 backend/server.py",
+    "web:dev": "next dev web --hostname 127.0.0.1 --port 3000",
+    "web:build": "next build web",
+    "test": "node --test frontend/*.test.js web/components/*.test.cjs && python3 -m unittest discover -s backend -p 'test_*.py'"
+  },
+  "dependencies": {
+    "@arcships/light-ocr": "^0.5.9",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}
